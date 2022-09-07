@@ -1,0 +1,178 @@
+/* display background color on navbar scroll */
+.navbarScroll.navbarDark {
+    background-color: #66BFBF;
+}
+
+.hero-para {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  color: #472D2D;
+}
+
+/* hero background image */
+.bgimage {
+    height:100vh;
+    background: url('images/background.jpg');
+    background-size:cover;
+    position:relative;
+}
+
+/* text css above hero image*/
+.hero_title {
+    font-size: 4.5rem;
+}
+.hero_desc {
+    font-size: 2rem;
+    margin-bottom:0;
+}
+.hero-text {
+    text-align: left;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #472D2D;
+    font-family: 'Sacramento', cursive;
+}
+
+.hero_color {
+  color: #66BFBF;
+}
+
+
+/* spacing on all sections */
+#about, #portfolio, #contact {
+    background-color:#F7F7F7;
+    padding-top: 1rem;
+}
+
+ #contact {
+     padding-bottom: 0.5rem;
+ }
+
+/* about section image css */
+.imageAboutPage {
+    border-radius: 30%;
+    width: 100%;
+}
+
+/* Portfolio section */
+/*tab*/
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  color: #472D2D;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 15px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #66BFBF;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 1px;
+  -webkit-animation: fadeEffect 1s;
+  animation: fadeEffect 1s;
+}
+
+/* Fade in tabs */
+@-webkit-keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+
+
+/* Card */
+
+:root {
+  --gradient: linear-gradient(to left top, #90B77D 10%, #66BFBF 90%) !important;
+}
+
+.card {
+  border: 1px solid #224B0C;
+  color: black;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+}
+
+.card-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.85rem
+}
+
+.card-img-top {
+  width:100px;
+  height:100px;
+}
+
+.btn {
+  border: 2px solid;
+  border-image-slice: 1;
+  background: var(--gradient) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: #66BFBF !important;
+  border-image-source:  var(--gradient) !important;
+  text-decoration: none;
+  transition: all .4s ease;
+}
+
+.btn:hover, .btn:focus {
+      background: var(--gradient) !important;
+  -webkit-background-clip: none !important;
+  -webkit-text-fill-color: #fff !important;
+  border: 2px solid #fff !important;
+  box-shadow: #222 1px 0 10px;
+  text-decoration: underline;
+}
+
+/* social media icons styling */
+.social-icons {
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.fab:hover, .fas:hover {
+  color: #66BFBF;
+}
+
+.fa-linkedin:hover, .fa-github:hover, .fa-envelope:hover {
+    color: #42855B;
+}
+
+.fab, .fas, .far {
+    color: #000000;
+}
+
+/* footer styling */
+#footer {
+    padding-top: 0.5rem;
+    background-color: #66BFBF;
+    text-align: center;
+}

@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Portfolio Website-Naveen</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- linking css file -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top navbar-light navbarScroll">
+    <div class="container">
+      <a class="navbar-brand" href="#home">Naveen</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio">PROJECTS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">CONTACT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/NavGit22" target="_blank">GITHUB</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- main banner -->
+  <section class="bgimage" id="home">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
+          <br />
+          <br />
+          <p class="hero_desc">Hello, my name is <span class="hero_title">Naveen</span></p>
+          <p class="hero_desc">And I'm a Software Developer</p>
+          <br />
+          <a href="assets/Resume.pdf" class="btn btn-sm btn-outline-info" target="_blank"> <img src="images/viewfile.png" /> View CV</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- about section-->
+  <section id="about">
+    <div class="container mt-4 pt-4">
+      <h2 class="text-center hero_color">About Me</h2>
+      <div class="row mt-4">
+        <div class="col-lg-4 text-center">
+          <img src="images/naveen.jpg" class="imageAboutPage" alt="">
+        </div>
+
+        <div class="col-lg-8 hero-para">
+          <p>
+            IT consultant having strong experience in Backend development and Mid level experience in Frontend development who wants to work on ambitious projects and contribute to a great team. I closely work with business teams and help them
+            in coming up with the feasible solutions for major initiatives which
+            has huge impact on the customer user experiences and organization’s reputations.
+          </p>
+          <p>
+            I always enjoy taking complex problems and turning them into simple and efficient designs. I love coding and always strive to write efficient and elegant code.
+            I constantly commit couple of hours a day on learning new skills and solving technical quizzes on the developer communities.
+          </p>
+          </br>
+          <h4 class="text-center">MY FAVOURITE THINGS ARE</h4>
+          <ul class="first">
+            <li>Application Development</li>
+            <li>
+              Learning
+              <ul class="second">
+                <li>
+                  Programming Languages, Frameworks, Testing tools, etc.
+                </li>
+              </ul>
+            </li>
+            <li>Efficient collaboration</li>
+            <li>Time Management</li>
+          </ul>
+          <br />
+          <h4 class="text-center">TECHNOLOGIES I'VE WORKED WITH</h4>
+          <br />
+          <table style="width: 100%;">
+            <tr class="text-center">
+              <th>Python</th>
+              <th>HTML</th>
+              <th>CSS</th>
+              <th>Bootstrap</th>
+              <th>Javascript</th>
+              <th>AWS Basics</th>
+            </tr>
+            <tr class="text-center">
+              <td><i class="fab fa-python fa-2x"></i></td>
+              <td><i class="fab fa-html5 fa-2x"></i></td>
+              <td><i class="fab fa-css3-alt fa-2x"></i></td>
+              <td><i class="fab fa-bootstrap fa-2x"></i></td>
+              <td><i class="fab fa-js-square fa-2x"></i></td>
+              <td><i class="fab fa-brands fa-aws fa-2x"></i> </td>
+            </tr>
+          </table>
+          <br />
+          <table style="width: 100%;">
+            <tr class="text-center">
+              <th>SQL DB</th>
+              <th>Heroku</th>
+              <th>Git</th>
+              <th>GitHub</th>
+              <th>Mainframe</th>
+            </tr>
+            <tr class="text-center">
+              <td><i class="fas fa-database fa-2x"></i></td>
+              <td><i class="fas fa-cloud fa-2x"></i></td>
+              <td><i class="fab fa-git fa-2x"></i></td>
+              <td><i class="fab fa-github fa-2x"></i></td>
+              <td><i class="fas fa-server fa-2x"></i></td>
+            </tr>
+          </table>
+
+          <br />
+          <h4 class="text-center">WHEN I'M NOT CODING & LEARNING, I DO</h4>
+          <ul class="first">
+            <li>
+              Read articles on LinkedIn.
+            </li>
+            <li>
+              Listen to Music and Watch Movies.
+            </li>
+          </ul>
+          </br>
+        </div>
+      </div>
+  </section>
+
+  <!-- portfolio section-->
+  <section id="portfolio">
+    <div class="container mx-auto mt-4">
+      <h2 class="text-center hero_color">PROJECTS</h2>
+      <br />
+      <div class="tab">
+        <button class="tablinks" onclick="openProj(event, 'Web')" id="defaultOpen">Web App</button>
+        <button class="tablinks" onclick="openProj(event, 'Script')">Script</button>
+        <button class="tablinks" onclick="openProj(event, 'Desktop')">Desktop App</button>
+        <button class="tablinks" onclick="openProj(event, 'Games')">Games</button>
+      </div>
+
+      <!-- Web based Application-->
+      <div id="Web" class="tabcontent">
+        <div class="row">
+          <!--Cafe Website with RESTFUL API -->
+          <div class="col-md-3">
+            <div class="card text-white bg-secondary" style="width: 16.5rem; height:22rem;">
+              <div class="card-header">
+                <img src="images/working_cafe.jpg" class="card-img-top" alt="...">
+                <h5 class="card-title text-center">Working Cafes</h5>
+              </div>
+              <div class="card-body">
+                <p class="card-text">A website which display the cafes with its facilities. This site is built using HTML, CSS, Bootstrap and Flask.</p>
+              </div>
+              <div class="card-footer">
+                <a href="https://github.com/NavGit22/CafeWifiSite" target="_blank" class="btn "><i class="fab fa-github"></i> Github</a>
+              </div>
+            </div>
+          </div>
+
+          <!--Image Color Palette Generator -->
+          <div class="col-md-3">
+            <div class="card text-white bg-secondary" style="width: 16.5rem; height:22rem;">
+              <div class="card-header">
+                <img src="images/color-palette.jpg" class="card-img-top" alt="...">
+                <h5 class="card-title text-center">Color Palette Generator</h5>
+              </div>
+              <div class="card-body">
+                <p class="card-text">A Web-based application for generating top 10 colors from an uploaded Image. This application is built using HTML, CSS, Bootstrap and Flask.</p>
+              </div>
+              <div class="card-footer">
+                <a href="https://github.com/NavGit22/ImageColorPalette" target="_blank" class="btn "><i class="fab fa-github"></i> Github</a>
+              </div>
+            </div>
+          </div>
+
+          <!--API based Website -->
+          <div class="col-md-3">
+            <div class="card text-white bg-secondary" style="width: 16.5rem; height:22rem;">
+              <div class="card-header">
+                <img src="images/rest-api.jpg" class="card-img-top" alt="...">
+                <h5 class="card-title text-center">API based Website</h5>
+              </div>
+              <div class="card-body">
+                <p class="card-text">A Web-based application for fetching data from various API endpoints and display the same. This application is built using HTML, CSS, Bootstrap and Flask.</p>
+              </div>
+              <div class="card-footer">
+                <a href="https://github.com/NavGit22/APIbasedWebsite" target="_blank" class="btn "><i class="fab fa-github"></i> Github</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- To Do Web App-->
+          <div class="col-md-3">
+            <div class="card text-white bg-secondary" style="width: 16.5rem; height:22rem;">
+              <div class="card-header">
+                <img src="images/to-do-list.jpg" class="card-img-top" alt="...">
+                <h5 class="card-title text-center">To Do List App</h5>
+              </div>
+              <div class="card-body">
+                <p class="card-text">A Web-based application for tracking your to do tasks and can handle multiple users as well. This application is built using HTML, CSS, Bootstrap, Flask and SQLite. </p>
+              </div>
+              <div class="card-footer">
+                <a href="https://github.com/NavGit22/To-Do-Web-App" target="_blank" class="btn "><i class="fab fa-github"></i> Github</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Python text based Application-->
+      <div id="Script" class="tabcontent">
+        <div class="row">
+          <!-- MorseCode-->
+          <div class="col-md-3">
+            <div class="card text-white bg-secondary" style="width: 16.5rem; height:22rem;">
+              <div class="card-header">
+                <img src="images/morsecode.jpg" class="card-img-top" alt="...">
+                <h5 class="card-title text-center">Morse Code Converter</h5>
+              </div>
+              <div class="card-body">
+                <p class="card-text">A Text-based Python program to convert strings into Morse code.</p>
+              </div>
+              <div class="card-footer">
+                <a href="https://github.com/NavGit22/Morsecode" target="_blank" class="btn "><i class="fab fa-github"></i> Github</a>
+              </div>
+            </div>
+          </div>
+
+          <!--Web Scraper -->
+          <div class="col-md-3">
+            <div class="card text-white bg-secondary" style="width: 16.5rem; height:22rem;">
+              <div class="card-header">
+                <img src="images/web-scraping.jpg" class="card-img-top" alt="...">
+                <h5 class="card-title text-center">Web Scraper</h5>
+              </div>
+              <div class="card-body">
+                <p class="card-text">A python program to scrape HTML pages and create csv file using the scraped data.</p>
+              </div>
+              <div class="card-footer">
+                <a href="https://github.com/NavGit22/WebScraper" target="_blank" class="btn "><i class="fab fa-github"></i> Github</a>
+              </div>
+            </div>
+          </div>
+
+          <!--Cookie Clikcer Bot -->
+          <div class="col-md-3">
+            <div class="card text-white bg-secondary" style="width: 16.5rem; height:22rem;">
+              <div class="card-header">
+                <img src="images/cookie-clicking.jpg" class="card-img-top" alt="...">
+                <h5 class="card-title text-center">Cookie Clicker Bot</h5>
+              </div>
+              <div class="card-body">
+                <p class="card-text">A python script to automate clicking Cookie on a webpage. Also automatically purchase gadgets using the earned money.</p>
+              </div>
+              <div class="card-footer">
+                <a href="https://github.com/NavGit22/CookieClickerBot" target="_blank" class="btn "><i class="fab fa-github"></i> Github</a>
+              </div>
+            </div>
+          </div>
+
+          <!--LinkedIn Autobot -->
+          <div class="col-md-3">
+            <div class="card text-white bg-secondary" style="width: 16.5rem; height:22rem;">
+              <div class="card-header">
+                <img src="images/linkedin-selenium.jpg" class="card-img-top" alt="...">
+                <h5 class="card-title text-center">LinkedIn Autobot</h5>
+              </div>
+              <div class="card-body">
+                <p class="card-text">A python script to automate the process of sign in, search, apply filter and save the suitable jobs posted within last 24 hours.</p>
+              </div>
+              <div class="card-footer">
+                <a href="https://github.com/NavGit22/LinkedInAutobot" target="_blank" class="btn "><i class="fab fa-github"></i> Github</a>
+              </div>
+            </div>
+          </div>
+
+          <!--Amazon Price Checker-->
+          <div class="col-md-3">
+            <div class="card text-white bg-secondary" style="width: 16.5rem; height:22rem;">
+              <div class="card-header">
+                <img src="images/price-checker.jpg" class="card-img-top" alt="...">
+                <h5 class="card-title text-center">Online Price Checker</h5>
+              </div>
+              <div class="card-body">
+                <p class="card-text">A Python program to check price for the specific products and send Alert when it's lower than your target price.</p>
+              </div>
+              <div class="card-footer">
+                <a href="https://github.com/NavGit22/AmazonPriceChecker" target="_blank" class="btn "><i class="fab fa-github"></i> Github</a>
+              </div>
+            </div>
+          </div>
+
+          <!--Internet Speed Twitter Bot-->
+          <div class="col-md-3">
+            <div class="card text-white bg-secondary" style="width: 16.5rem; height:22rem;">
+              <div class="card-header">
+                <img src="images/InternetSpeedBot.jpg" class="card-img-top" alt="...">
+                <h5 class="card-title text-center">Internet Speed Twitter Bot</h5>
+              </div>
+              <div class="card-body">
+                <p class="card-text">A Python program to check internet speed and tweet Internet Service Provider when the internet speed is not good enough.</p>
+              </div>
+              <div class="card-footer">
+                <a href="https://github.com/NavGit22/InternetSpeedTwitterBot" target="_blank" class="btn "><i class="fab fa-github"></i> Github</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Python GUI based Application-->
+      <div id="Desktop" class="tabcontent">
+        <div class="row">
+          <!-- Image Watermarking-->
+          <div class="col-md-3">
+            <div class="card text-white bg-secondary" style="width: 16.5rem; height:22rem;">
+              <div class="card-header">
+                <img src="images/watermark.jpg" class="card-img-top" alt="...">
+                <h5 class="card-title text-center">Image Watermarking</h5>
+              </div>
+              <div class="card-body">
+                <p class="card-text">A GUI-based application built using Python programming and libraries for watermarking images.</p>
+              </div>
+              <div class="card-footer">
+                <a href="https://github.com/NavGit22/ImageWaterMarkerGUI" target="_blank" class="btn "><i class="fab fa-github"></i> Github</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Typing Speed Test-->
+          <div class="col-md-3">
+            <div class="card text-white bg-secondary" style="width: 16.5rem; height:22rem;">
+              <div class="card-header">
+                <img src="images/typing-speed-test.jpg" class="card-img-top" alt="...">
+                <h5 class="card-title text-center">Typing Speed Test</h5>
+              </div>
+              <div class="card-body">
+                <p class="card-text">A GUI-based application built using Python programming and libraries for testing your typing speed.</p>
+              </div>
+              <div class="card-footer">
+                <a href="https://github.com/NavGit22/TypingSpeedTest" target="_blank" class="btn "><i class="fab fa-github"></i> Github</a>
+              </div>
+            </div>
+          </div>
+
+          <!--Disappearing Writing Text App -->
+          <div class="col-md-3">
+            <div class="card text-white bg-secondary" style="width: 16.5rem; height:22rem;">
+              <div class="card-header">
+                <img src="images/disappear-text.jpg" class="card-img-top" alt="...">
+                <h5 class="card-title text-center">Disappearing Writing Text</h5>
+              </div>
+              <div class="card-body">
+                <p class="card-text">A GUI-based application built using Python programming and libraries for checking disappearing text functionality.</p>
+              </div>
+              <div class="card-footer">
+                <a href="https://github.com/NavGit22/DisappearingWritingTextApp" target="_blank" class="btn "><i class="fab fa-github"></i> Github</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Convert PDF to Audiobook -->
+          <div class="col-md-3">
+            <div class="card text-white bg-secondary" style="width: 16.5rem; height:22rem;">
+              <div class="card-header">
+                <img src="images/pdf-to-audio.jpg" class="card-img-top" alt="...">
+                <h5 class="card-title text-center">PDF to Audio Converter</h5>
+              </div>
+              <div class="card-body">
+                <p class="card-text">A GUI-based application built using Python programming and libraries for converting a PDF file to an Audiobook.</p>
+              </div>
+              <div class="card-footer">
+                <a href="https://github.com/NavGit22/ConvertPDFtoAudioBook" target="_blank" class="btn "><i class="fab fa-github"></i> Github</a>
+              </div>
+            </div>
+          </div>
+
+          <!--Password Manager -->
+          <div class="col-md-3">
+            <div class="card text-white bg-secondary" style="width: 16.5rem; height:22rem;">
+              <div class="card-header">
+                <img src="images/password-mgr.jpg" class="card-img-top" alt="...">
+                <h5 class="card-title text-center">Password Manager</h5>
+              </div>
+              <div class="card-body">
+                <p class="card-text">A GUI-based application built using Python programming and libraries to manage your passwords for various websites in a JSON file.</p>
+              </div>
+              <div class="card-footer">
+                <a href="https://github.com/NavGit22/PasswordMgr" target="_blank" class="btn "><i class="fab fa-github"></i> Github</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Games -->
+      <div id="Games" class="tabcontent">
+        <div class="row">
+
+          <!-- TicTacToe Game-->
+          <div class="col-md-3">
+            <div class="card text-white bg-secondary" style="width: 16.5rem; height:22rem;">
+              <div class="card-header">
+                <img src="images/tictactoe.jpg" class="card-img-top" alt="...">
+                <h5 class="card-title text-center">TicTacToe Game</h5>
+              </div>
+              <div class="card-body">
+                <p class="card-text">A Text-based Python program for playing TicTacTeo 3X3 Game. User will be provided an option to play against computer or player 2</p>
+              </div>
+              <div class="card-footer">
+                <a href="https://github.com/NavGit22/TicTacToe" target="_blank" class="btn "><i class="fab fa-github"></i> Github</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pong Game-->
+          <div class="col-md-3">
+            <div class="card text-white bg-secondary" style="width: 16.5rem; height:22rem;">
+              <div class="card-header">
+                <img src="images/Pong.jpg" class="card-img-top" alt="...">
+                <h5 class="card-title text-center">Pong Game</h5>
+              </div>
+              <div class="card-body">
+                <p class="card-text">A GUI-based Pong game built using Python Object Oriented Programming concepts and Python libraries.</p>
+              </div>
+              <div class="card-footer">
+                <a href="https://github.com/NavGit22/PongGame" target="_blank" class="btn "><i class="fab fa-github"></i> Github</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Breakout Game-->
+          <div class="col-md-3">
+            <div class="card text-white bg-secondary" style="width: 16.5rem; height:22rem;">
+              <div class="card-header">
+                <img src="images/breakout.jpg" class="card-img-top" alt="...">
+                <h5 class="card-title text-center">Break Out Game</h5>
+              </div>
+              <div class="card-body">
+                <p class="card-text">A GUI-based Breakout game built using Python Object Oriented Programming concepts and Python libraries.</p>
+              </div>
+              <div class="card-footer">
+                <a href="https://github.com/NavGit22/BreakoutGame" target="_blank" class="btn "><i class="fab fa-github"></i> Github</a>
+              </div>
+            </div>
+          </div>
+
+          <!--Space Invaders Game-->
+          <div class="col-md-3">
+            <div class="card text-white bg-secondary" style="width: 16.5rem; height:22rem;">
+              <div class="card-header">
+                <img src="images/space-invaders.jpg" class="card-img-top" alt="...">
+                <h5 class="card-title text-center">Space Invaders Game</h5>
+              </div>
+              <div class="card-body">
+                <p class="card-text">A GUI-based Space Invaders game built using Python Object Oriented Programming concepts and Python libraries.</p>
+              </div>
+              <div class="card-footer">
+                <a href="https://github.com/NavGit22/SpaceInvaderGame" target="_blank" class="btn "><i class="fab fa-github"></i> Github</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- contact section-->
+  <section id="contact">
+    <div class="container mt-3 contactContent">
+      <h2 class="text-center hero_color">Contact Me</h2>
+
+      <div class="row mt-4">
+        <div class="col-lg-6">
+          <!-- to edit google map goto https://www.embed-map.com type your location, generate html code and copy the html  -->
+          <div style="max-width:100%;list-style:none; transition: none;overflow:hidden;width:500px;height:500px;">
+            <div id="display-googlemap" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0"
+                src="https://www.google.com/maps/embed/v1/place?q=India&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe></div><a class="codefor-google-map" rel="nofollow" href="https://www.embed-map.com"
+              id="get-mapdata">https://www.embed-map.com</a>
+            <style>
+              #display-googlemap img.text-marker {
+                max-width: none !important;
+                background: none !important;
+              }
+
+              img {
+                max-width: none
+              }
+            </style>
+          </div>
+        </div>
+
+        <div class="col-lg-6 hero-para">
+          <div>
+            <br />
+            <br />
+            <h6>Who:<br />Naveen, Developer</h6>
+            <br />
+            <h6>Where:<br />Chennai, Tamil Nadu, India <br /></h6>
+            <br />
+            <h6><a class="hover" href="mailto:all4all.naveen@gmail.com" target="_Blank">Email Me:</a><span>
+                all4all.naveen@gmail.com</span></h6>
+            <br />
+            <h6><a class="hover" href="https://github.com/NavGit22/" target="_Blank">GitHub Profile</a></h6>
+            <br />
+            <h6><a class="hover" href="https://www.linkedin.com/in/naveen-s-746882139/" target="_Blank">Linked In Profile</a></h6>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- footer section-->
+  <footer id="footer">
+    <div class="container-fluid">
+      <!-- social media icons -->
+      <div class="social-icons mt-4">
+        <a href="mailto:all4all.naveen@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/naveen-s-746882139/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/NavGit22/" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+    <div id="copyright">&#169; <span id="year">2022</span> Naveen. All rights reserved.</div>
+  </footer>
+
+  <!-- load javascript after loading all html content -->
+  <script src="script/script.js"></script>
+
+</body>
+
+</html>
